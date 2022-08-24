@@ -1,0 +1,200 @@
+<body>
+
+<div class="container">
+  <section>
+    <span class="example-spacer"></span>
+
+    <div class="example-button-row">
+      <div class="example-flex-container">
+
+        <div class="example-button-container">
+            <p class="pere">
+              <button mat-fab class="butons" >
+                <mat-icon matBadge="1">account_circle</mat-icon>
+              </button>
+              <br>
+              Vista general de la cuenta
+            </p>
+        </div>
+
+        <div class="example-button-container">
+          <p class="pere">
+            <button mat-fab class="butons" >
+              <mat-icon matBadge="1">create</mat-icon>
+            </button>
+            <br>
+            Editar perfil
+          </p>
+        </div>
+
+        <div class="example-button-container">
+          <p class="pere">
+            <button mat-fab class="butons" >
+              <mat-icon matBadge="1">lock</mat-icon>
+            </button>
+            <br>
+            Cambio de contraseña
+          </p>
+        </div>
+
+
+        <div class="example-button-container">
+          <p class="pere">
+            <button mat-fab class="butons" >
+              <mat-icon matBadge="1">notifications_none</mat-icon>
+            </button>
+            <br>
+            Configuracion de notifiaciones
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <span class="example-spacer"></span>
+
+  </section>
+</div >
+
+<br>
+
+<div class="container">
+
+  <h1>Vista general de la cuenta</h1>
+
+</div >
+
+<div class="container">
+
+  <h3>Informacion general</h3>
+
+    <h2>Nombres</h2>
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="Carlos">
+      <input matInput>
+    </mat-form-field>
+
+    <h2>Apellidos</h2>
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="Monsalve">
+      <input matInput>
+    </mat-form-field>
+
+    <h2>Documento de identidad</h2>
+    <mat-form-field appearance="fill">
+      <mat-label>Documento</mat-label>
+      <mat-select>
+        <mat-option value="one">Cedula de ciudadania </mat-option>
+        <mat-option value="two">Pasaporte</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h2>Numero de identidad</h2>
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="10000000000">
+      <input matInput>
+    </mat-form-field>
+
+    <h2>E-mail</h2>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <input matInput placeholder="@gmail.com" value="@mail.com">
+    </mat-form-field>
+
+    <h2>Celular</h2>
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <span matPrefix >
+          <img src="./assets/img/colombia.png" alt="">+57 &nbsp;</span>
+        <input type="tel" matInput placeholder="312-423-12345">
+        <mat-icon matSuffix>mode_edit</mat-icon>
+      </mat-form-field>
+    </form>
+
+    <h2>Fecha de nacimiento</h2>
+    <mat-form-field appearance="fill">
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <h2>Genero</h2>
+
+    <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+      <mat-button-toggle value="hombre">Hombre</mat-button-toggle>
+      <mat-button-toggle value="mujer">Mujer</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <br>
+    <br>
+
+
+    <button routerLink="/dashboard/usuarios" mat-raised-button class="perfils">Editar </button>
+
+</div >
+
+<br>
+
+<div class="container">
+
+  <h3>Informacion Financiera</h3>
+
+    <h2>Ocupacion</h2>
+
+    <mat-radio-group class="vertical" aria-label="Select an option">
+      <mat-radio-button value="1">Estudiante</mat-radio-button>
+      <mat-radio-button value="2">Empleado</mat-radio-button>
+      <mat-radio-button value="3">Independiente</mat-radio-button>
+      <mat-radio-button value="4">Pensionado</mat-radio-button>
+      <mat-radio-button value="5">Otro</mat-radio-button>
+    </mat-radio-group>
+
+    <h2>Nivel de educaion</h2>
+    <mat-form-field appearance="fill">
+      <mat-select>
+        <mat-option value="primaria">Primaria</mat-option>
+        <mat-option value="secundaria">Secundaria</mat-option>
+        <mat-option value="universitaria">Universitaria</mat-option>
+        <mat-option value="postgrado">Postgrado</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h2>Actividad laboral</h2>
+    <mat-form-field appearance="fill">
+      <mat-select>
+        <mat-option value="tecnologia">Tecnologia</mat-option>
+        <mat-option value="administacion">Administacion</mat-option>
+        <mat-option value="medicina">Medicina</mat-option>
+        <mat-option value="idiomas">Idiomas</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h2>Ingresos promedios mensuales</h2>
+    <mat-form-field appearance="fill">
+      <mat-select>
+        <mat-option value="q1">Entre 2'000.001 y 3'000.000</mat-option>
+        <mat-option value="q2">Entre 3'000.001 y 4'000.000</mat-option>
+        <mat-option value="q3">Entre 4'000.001 y 5'000.000</mat-option>
+        <mat-option value="q4">Entre 5'000.001 y 6'000.000</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h2>Gastos promedios mensuales</h2>
+    <mat-form-field appearance="fill">
+      <mat-select>
+        <mat-option value="eq1">Entre 1'000.001 y 1'500.000</mat-option>
+        <mat-option value="eq2">Entre 2'000.001 y 2'500.000</mat-option>
+        <mat-option value="eq3">Entre 3'000.001 y 3'500.000</mat-option>
+        <mat-option value="eq4">Entre 4'000.001 y 4'500.000</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <br>
+    <br>
+
+    <button routerLink="/dashboard/usuarios" mat-raised-button class="perfils"> Editar
+    </button>
+
+
+  </div>
+</body>
+

@@ -1,0 +1,42 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.title {
+  text-align: left;
+  font: normal normal bold 14px/24px DIN 2014;
+  letter-spacing: 0.14px;
+  color: #632678;
+  opacity: 1;
+}
+
+.perfils {
+  min-width: 100px;
+  line-height: 28px;
+  background: #632678 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  color: #FFFFFF;
+}
+
+.navbars{
+  height: 80px;
+  background: #E4E0E8 0% 0% no-repeat padding-box;;
+  opacity: 1;
+}
+
+h1{
+  text-align: left;
+font: normal normal bold 21px/24px DIN 2014;
+letter-spacing: 0.21px;
+color: #000000;
+opacity: 1;
+}
+
+.container{
+  margin: 10px 9px -3px;
+  padding: 1%;
+  text-align:right;
+}
+
+
